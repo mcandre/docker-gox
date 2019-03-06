@@ -3,11 +3,15 @@
 # EXAMPLE
 
 ```console
-$ go get github.com/mcandre/go-ios7crypt
+$ git clone https://github.com/mcandre/go-ios7crypt.git "$GOPATH/src/github.com/mcandre/go-ios7crypt"
 $ cd "$GOPATH/src/github.com/mcandre/go-ios7crypt"
-
-$ docker pull mcandre/docker-gox:musl
-$ docker run -v "$(pwd):/go/src/github.com/mcandre/go-ios7crypt" mcandre/docker-gox:musl sh -c "cd /go/src/github.com/mcandre/go-ios7crypt && gox -output=\"/go/src/github.com/mcandre/go-ios7crypt/bin/{{.Dir}}-${version}/{{.OS}}-musl/{{.Arch}}/{{.Dir}}\" -os=linux -arch=amd64 ./cmd/..."
+$ docker run -v "$(pwd):/go/src/github.com/mcandre/go-ios7crypt" mcandre/docker-gox:musl sh -c "cd /go/src/github.com/mcandre/go-ios7crypt && gox -output=\"/go/src/github.com/mcandre/go-ios7crypt/bin/{{.Dir}}-0.0.1/{{.OS}}-musl/{{.Arch}}/{{.Dir}}\" -os=linux -arch=amd64 ./cmd/..."
+$ tree bin
+bin
+└── ios7crypt-0.0.1
+    └── linux-musl
+        └── amd64
+            └── ios7crypt
 ```
 
 # DOCKERHUB
