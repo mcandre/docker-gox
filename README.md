@@ -14,6 +14,12 @@ bin
             └── ios7crypt
 ```
 
+# FEATURES
+
+* Go
+* Gox
+* g++ (add your own cgo dependencies on top of docker-gox)
+
 # DOCKERHUB
 
 https://hub.docker.com/r/mcandre/docker-gox/

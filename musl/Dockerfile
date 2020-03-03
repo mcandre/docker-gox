@@ -1,2 +1,3 @@
 FROM mcandre/docker-go:musl
-RUN go get github.com/mitchellh/gox
+RUN apk add -U g++ && \
+    go get github.com/mitchellh/gox
