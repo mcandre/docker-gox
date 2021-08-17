@@ -26,7 +26,7 @@ https://hub.docker.com/r/mcandre/docker-gox/
 
 # REQUIREMENTS
 
-* [Docker](https://www.docker.com)
+* [Docker](https://www.docker.com) 19+
 
 ## Optional
 
