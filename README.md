@@ -24,26 +24,10 @@ bin
 
 https://hub.docker.com/r/mcandre/docker-gox/
 
-# REQUIREMENTS
+# RUNTIME REQUIREMENTS
 
 * [Docker](https://www.docker.com) 19+
 
-## Optional
+# CONTRIBUTING
 
-* [make](https://www.gnu.org/software/make/)
-
-# BUILD IMAGES
-
-```console
-$ make
-
-$ docker images | grep mcandre/docker-gox
-mcandre/docker-gox                     glibc               85060a3eb09c        57 minutes ago      557 MB
-mcandre/docker-gox                     musl                f8c14a4be001        About an hour ago   305 MB
-```
-
-# PUBLISH IMAGES
-
-```console
-$ make publish
-```
+For more information on developing docker-gox itself, see [DEVELOPMENT.md](DEVELOPMENT.md).
